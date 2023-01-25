@@ -52,7 +52,7 @@ def runScript():
             print("Downloading images for " + showTitle)
             posterPath = download(baseurl + showPoster, token, "poster.png", showFolder)
             
-            # todo - add loop through season posters and save to season folder.
+            # loop through seasons and export season poster
             for season in video.seasons():
                 seasonTitle = season.title
                 seasonThumb = season.thumb
